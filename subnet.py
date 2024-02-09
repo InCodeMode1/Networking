@@ -97,3 +97,10 @@ class Subnet:
         print("Subnet Mask: " + self.subnet_mask())
         print("Wildcard Mask: " + self.wild_card_mask())
         # self.possible_subnet_range()
+
+
+if __name__ == '__main__':
+    response = input("Enter IP address in format 'IP\cidr' Ex. 192.168.0.1\\24\n")
+    resp = response.split('\\')
+    IP = Subnet(resp[0], int(resp[1]))
+    IP.show_all()
