@@ -104,3 +104,4 @@ if __name__ == '__main__':
     resp = response.split('\\')
     IP = Subnet(resp[0], int(resp[1]))
     IP.show_all()
+    exit = input("Press Enter to exit.")
